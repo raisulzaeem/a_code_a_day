@@ -1,9 +1,3 @@
-"""
-Problem Statement: 
-
-Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
-For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17."""
-
 import argparse
 
 def arg_parse():
@@ -14,7 +8,19 @@ def arg_parse():
     return args
 
 def check_k(num_list, k):
+    """Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+    For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+    
+    Args:
+        num_list(list): A list of numbers (int)
+        k (int): The value to compare with
 
+    Returns:
+        ret_bool(bool): True if any two numbers from the list add up to k, False otherwise.
+    
+    Raise:
+        Exception: I guess this is redundant
+    """
     sorted_list = sorted(num_list)
     i = 0
     j = len(num_list) - 1
