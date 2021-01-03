@@ -15,7 +15,7 @@ Bonus: Can you do this in one pass?
 
 Given the root of a binary tree, return a deepest node.
 
-## Day 2
+## Day 3
 
 **Problem Statement:**
 
