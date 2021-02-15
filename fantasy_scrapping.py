@@ -54,11 +54,13 @@ if __name__=="__main__":
     
     opponent_squad_flattened = [player for team in opponent_squad for player in team]
 
+    opponent_differentials = opponent_squad_flattened
+
     monkey_differentials = []
 
     for player in monkey_squad_flattened:
         try:
-            opponent_squad_flattened.remove(player)
+            opponent_differentials.remove(player)
         except:
             monkey_differentials.append(player)
 
@@ -85,7 +87,7 @@ if __name__=="__main__":
             f.write("\n")
         f.write('\n'+2*dashedline)
         f.write("\n#### ---- Opponent Differentials ---- ####"+2*dashedline)
-        for player, point in monkey_differentials:
+        for player, point in opponent_differentials:
             f.write(player+' ----> '+point)
             f.write("\n")
         f.write('\n'+2*dashedline)
