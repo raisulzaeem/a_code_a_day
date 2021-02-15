@@ -5,7 +5,8 @@ import time
 
 options = Options()
 options.headless = True
-driver = webdriver.Chrome("C:\chromedriver.exe",options=options)
+chromedriver_path = "C:\chromedriver.exe"
+driver = webdriver.Chrome(chromedriver_path,options=options)
 
 
 def get_team_stat(team_id):

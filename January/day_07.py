@@ -11,7 +11,7 @@ def invalid_parentheses(my_str):
 
 
 if __name__ == "__main__":
-    input_string = "()()()()()())((()())())()()"
+    input_string = ")))))))((((((("
 
     result = invalid_parentheses(input_string)
 
