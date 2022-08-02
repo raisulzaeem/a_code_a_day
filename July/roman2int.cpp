@@ -8,7 +8,7 @@ using std::vector;
 
 class Solution {
     public:
-        int romanToInt(string s) 
+        int romanToInt(const string &s) 
         {
             int current, old, total = 0;
             for(int i=s.length()-1; i>=0; i--)
