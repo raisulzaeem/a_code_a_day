@@ -12,6 +12,8 @@ void func(int &&rval)
     cout<<"rvalue call\n";
 }
 
+
+// *** Perfect Forwarding ***
 template<typename T>
 void Wrapper(T&& universal)
 {
@@ -28,6 +30,12 @@ void Wrapper(T&& universal)
 
 int main()
 {
+    double d{100};
+    
+    // *** Universal reference : auto && ***
+    // It can be either rvalue reference or lvalue reference depends upon the type of rhs value.
+    auto&& autoVariable = d;
+    
     int lval = 5;
     //Wrapper(lval);
     Wrapper(10);
